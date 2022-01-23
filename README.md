@@ -3,10 +3,10 @@
 A REST-based service for Amazon sales dataset.
 This service accepts an SQL query in the form of the template shown below and translate into MapReduce and Spark job on the dataset.
 
-SELECT <COLUMNS>, FUNC(COLUMN1)
-FROM <TABLE>
-WHERE <COLUMN1> = Y
-GROUP BY <COLUMNS>
+SELECT {COLUMNS}, FUNC(COLUMN1)
+FROM {TABLE}
+WHERE {COLUMN1} = Y
+GROUP BY {COLUMNS}
 HAVING FUNC(COLUMN1)>X
 
 --Here FUNC can be COUNT, MAX, MIN, SUM
